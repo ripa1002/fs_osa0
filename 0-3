@@ -1,0 +1,16 @@
+kayttaja->selain:
+note left of selain
+Kayttaja klikkaa muistiinpanot-linkkiä
+end note
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/notes
+palvelin->selain: status 200, sivun HTML-koodi
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/main.css
+palvelin->selain: status 200, sivun CSS-muotoilu
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/main.js
+palvelin->selain: status 200, sivun Javascipt-tiedosto
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/data.json
+palvelin->selain: status 200, muistiinpanojen JSON-muotoinen raakadata
+note left of selain
+ Selain näyttää palvelimen palauttaman HTML:n
+ jossa on mukana bulletlist muistiinpanoille
+end note
