@@ -1,0 +1,14 @@
+kayttaja->selain:
+note left of selain
+kayttaja kirjottaa tekstikenttään muistiinpanon ja painaa Talleta-nappia
+end note
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+palvelin->selain: status 201, viesti luotu
+
+note left of palvelin
+Selain pysyy samalla sivulla ja muita HTTP-pyyntöjä ei suoriteta.
+end note
+
+note left of selain
+ selain näyttää uuden viestin muistiinpanot sivulla
+end note
